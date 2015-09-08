@@ -36,8 +36,6 @@ CD %REPO_NAME%
 SLEEP 2
 CALL mvn clean site test -Dtest=AllTests -Dbuild.version="1.1"
 ECHO.
-ECHO Executing Java programm ...
-java -cp C:\%WS_DIR%\%REPO_NAME%\target\%REPO_NAME%-%APP_VERSION%.jar %MAIN_CLASS% %ARG_01%
 GOTO END
 
 :EXIT_JAVA

@@ -33,5 +33,3 @@ git clone https://github.com/$GITHUB_ACCOUNT/$REPO_NAME.git
 cd ./$REPO_NAME
 
 mvn clean site test -Dtest=AllTests -Dbuild.version="1.1"
-echo "Executing Java programm ..."
-java -cp $HOME/$WS_DIR/$REPO_NAME/target/$REPO_NAME-$APP_VERSION.jar $MAIN_CLASS $ARGS_01
